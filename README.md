@@ -1,6 +1,6 @@
 # React + Vite
 
-## Book store Web App that uses MERN stack technology.
+## Book store Web App that uses MERN stack technology
 
 M - MongoDb  
 E - Express JS
