@@ -1,8 +1,25 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Book store Web App that uses MERN stack technology.
 
-Currently, two official plugins are available:
+M - MongoDb  
+E - Express JS
+R - React
+N - Nodejs
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project info
+
+- File structure using Vite.
+- tailwind CSS for frontend designing.
+- Thunder client for API request handling through Vs code extension.
+- Database on MongoAtlas.
+- Uses CORS for providing a Connect/Express middleware.
+- React Router DOM and Icons.
+- Axios to fetch data for the frontend.
+
+## Has functinalities as
+
+- Show Book
+- Create Book
+- Delete Book
+- Edit Book
