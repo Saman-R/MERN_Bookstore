@@ -2,7 +2,7 @@
 
 ## Book store Web App that uses MERN stack technology
 
-M - MongoDb  
+M - MongoDb
 E - Express JS
 R - React
 N - Nodejs
