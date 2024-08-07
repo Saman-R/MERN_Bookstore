@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { PiBookOpenTextLight } from 'react-icons/pi';
 import { BiUserCircle, BiShow } from 'react-icons/bi';
@@ -50,4 +51,13 @@ const BookSingle = ({ book }) => {
     )
 }
 
-export default BookSingle
+BookSingle.propTypes = {
+    book: PropTypes.shape({
+        _id: PropTypes.string.isRequired,
+        title: PropTypes.string.isRequired,
+        author: PropTypes.string.isRequired,
+        publishYear: PropTypes.string.isRequired
+    }).isRequired
+};
+
+export default BookSingle;

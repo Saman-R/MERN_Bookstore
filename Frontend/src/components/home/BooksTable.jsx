@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { AiOutlineEdit } from 'react-icons/ai';
 import { BsInfoCircle } from 'react-icons/bs';
 import { MdOutlineAddBox, MdOutlineDelete } from 'react-icons/md';
+import PropTypes from 'prop-types';
 
 const BooksTable = ({ books }) => {
     return (
@@ -52,6 +53,16 @@ const BooksTable = ({ books }) => {
             </tbody>
         </table>
     );
+};
+BooksTable.propTypes = {
+    books: PropTypes.arrayOf(
+        PropTypes.shape({
+            _id: PropTypes.string.isRequired,
+            title: PropTypes.string.isRequired,
+            author: PropTypes.string.isRequired,
+            publishYear: PropTypes.string.isRequired
+        })
+    ).isRequired
 };
 
 export default BooksTable;
