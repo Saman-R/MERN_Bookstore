@@ -31,7 +31,7 @@ const BookSingle = ({ book }) => {
                 <BiShow className='text-3xl text-blue-800 hover:text-black cursor-pointer'
                     onClick={() => setshowModal(true)}
                 />
-                <Link to={`books/detail/${book._id}`}>
+                <Link to={`/books/details/${book._id}`}>
                     <BsInfoCircle className='text-2xl text-green-800 hover:text-black' />
                 </Link>
                 <Link to={`books/edit/${book._id}`}>
