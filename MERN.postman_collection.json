@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "9f9ad301-0a43-462d-b6c2-175857abd2d7",
+		"name": "MERN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37026509"
+	},
+	"item": [
+		{
+			"name": "MERN",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5555/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5555",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mern Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Thousand Nghts\",\n    \"author\": \"Dimtri Pavlov\",\n    \"publishYear\": 2001\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5555/books/66969c04ddd38bbc5e3b30ae",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5555",
+					"path": [
+						"books",
+						"66969c04ddd38bbc5e3b30ae"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MERN ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5555/books/6696a3badcdb055875a73479",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5555",
+					"path": [
+						"books",
+						"6696a3badcdb055875a73479"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MERN delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5555/books/66969c04ddd38bbc5e3b30ae",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5555",
+					"path": [
+						"books",
+						"66969c04ddd38bbc5e3b30ae"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MERN post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"The Alchemist\",\n    \"author\": \"Paulo Coelho\",\n    \"publishYear\": 1988\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5555/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5555",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

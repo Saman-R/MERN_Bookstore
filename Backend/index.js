@@ -1,31 +1,28 @@
 import express from 'express';
 import { PORT, mongoDBURL } from './config.js';
 import mongoose from 'mongoose';
-// import { Book } from './models/bookModel.js';
 import booksRoute from './routes/booksRoute.js';
 import cors from 'cors';
+import dotenv from 'dotenv';
 
+dotenv.config(); // Load environment variables from .env file
 
 const app = express();
 
-//Middleware for parsing request body
+// Middleware for parsing request body
 app.use(express.json());
 
-//Middleware to handle cors policy (cross origin resource sharing)
+// Middleware to handle CORS policy
+app.use(cors({
+    origin: 'http://localhost:5173',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type'],
+}));
 
-app.use(cors());
-app.use(
-    cors({
-        origin: 'http://localhost:5173',
-        methods:['GET', 'POST', 'PUT', 'DELETE'],
-        allowedHeaders: ['Content-Type'],
-    })
-)
-
-//Creating the server 
+// Creating the server
 app.get('/', (request, response) => {
     console.log(request);
-    return response.status(200).send('Welcome to MERN stack tutorial');
+    return response.status(200).send('Server Running');
 });
 
 // Use the books router
@@ -42,4 +39,3 @@ mongoose.connect(mongoDBURL)
     .catch((error) => {
         console.log(error);
     });
-    
